@@ -16,3 +16,9 @@ faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
 
+document.querySelectorAll('.expand-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const card = btn.parentElement;
+        card.classList.toggle('open');
+    });
+});
