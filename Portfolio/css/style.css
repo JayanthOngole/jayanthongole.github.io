@@ -471,3 +471,10 @@ h2 {
     font-style: italic;
 }
 
+
+.section h2 {
+    border-left: 3px solid #4f7cff;
+    padding-left: 10px;
+}
+
+
