@@ -33,5 +33,7 @@ window.addEventListener('scroll', () => {
     const scrollTop = document.documentElement.scrollTop;
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const progress = (scrollTop / height) * 100;
-    document.getElementById('scrollProgress').style.width = progress + '%';
+    const bar = document.getElementById('scrollProgress');
+    if (bar) bar.style.width = progress + '%';
 });
+
