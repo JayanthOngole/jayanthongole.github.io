@@ -236,9 +236,17 @@ footer {
     text-shadow: 0 0 12px rgba(79,124,255,0.4);
 }
 
+.hero-sub {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #9aa0a6;
+}
+
+
 /* subtle hover lift for buttons */
 .btn:hover, .btn-outline:hover {
     transform: translateY(-2px);
 }
+
 
 
