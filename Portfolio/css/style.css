@@ -505,4 +505,13 @@ h2 {
 }
 
 
+#themeToggle {
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
 
