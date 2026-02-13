@@ -425,5 +425,13 @@ footer {
 }
 
 
+h2 {
+    letter-spacing: 0.5px;
+}
+
+.project-card, .arch-box, .card {
+    backdrop-filter: blur(6px);
+}
+
 
 
