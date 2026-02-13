@@ -190,3 +190,19 @@ footer {
         padding: 60px 20px;
     }
 }
+
+
+/* ===== FADE-IN ANIMATION ===== */
+.fade {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all 0.8s ease;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
