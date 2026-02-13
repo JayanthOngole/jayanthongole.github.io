@@ -205,24 +205,38 @@ footer {
 }
 
 
-/* ===== HERO PREMIUM UPGRADE ===== */
+/* ===== HERO PREMIUM UPGRADE (STRONG GLOW) ===== */
 
 .hero {
     position: relative;
     overflow: hidden;
 }
 
-/* glowing gradient background */
+/* strong glowing gradient background */
 .hero::before {
     content: "";
     position: absolute;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(79,124,255,0.25) 0%, transparent 70%);
-    top: -150px;
+    width: 900px;
+    height: 900px;
+    background: radial-gradient(circle, rgba(79,124,255,0.45) 0%, rgba(79,124,255,0.18) 40%, transparent 70%);
+    top: -250px;
     left: 50%;
     transform: translateX(-50%);
-    filter: blur(80px);
+    filter: blur(120px);
+    z-index: 0;
+}
+
+/* add secondary glow */
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(120,170,255,0.35) 0%, transparent 70%);
+    bottom: -200px;
+    left: 40%;
+    transform: translateX(-50%);
+    filter: blur(90px);
     z-index: 0;
 }
 
@@ -231,22 +245,16 @@ footer {
     z-index: 1;
 }
 
-/* soft text glow */
+/* stronger text glow */
 .hero h1 {
-    text-shadow: 0 0 12px rgba(79,124,255,0.4);
+    text-shadow: 0 0 20px rgba(79,124,255,0.6), 0 0 40px rgba(79,124,255,0.3);
 }
-
-.hero-sub {
-    margin-top: 10px;
-    font-size: 15px;
-    color: #9aa0a6;
-}
-
 
 /* subtle hover lift for buttons */
 .btn:hover, .btn-outline:hover {
     transform: translateY(-2px);
 }
+
 
 
 
