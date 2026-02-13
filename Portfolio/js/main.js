@@ -22,3 +22,8 @@ document.querySelectorAll('.expand-btn').forEach(btn => {
         card.classList.toggle('open');
     });
 });
+
+
+document.getElementById("themeToggle").onclick = () => {
+    document.body.classList.toggle("light");
+};
