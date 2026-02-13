@@ -514,4 +514,16 @@ h2 {
 }
 
 
+body.light {
+    background: #f5f6fa;
+    color: #111;
+}
+
+body.light .card,
+body.light .project-card,
+body.light .arch-box {
+    background: #ffffff;
+    border-color: #ddd;
+}
+
 
