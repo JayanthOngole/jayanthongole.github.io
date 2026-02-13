@@ -542,6 +542,25 @@ html {
     scroll-behavior: smooth;
 }
 
+.project-card:hover,
+.card:hover,
+.focus-card:hover,
+.arch-box:hover {
+    box-shadow: 0 0 10px rgba(79,124,255,0.18);
+}
+
+
+.section h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #4f7cff;
+    margin-top: 6px;
+}
+
+
+
 
 
 
