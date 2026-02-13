@@ -27,3 +27,11 @@ document.querySelectorAll('.expand-btn').forEach(btn => {
 document.getElementById("themeToggle").onclick = () => {
     document.body.classList.toggle("light");
 };
+
+/* ===== Scroll Progress Bar ===== */
+window.addEventListener('scroll', () => {
+    const scrollTop = document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const progress = (scrollTop / height) * 100;
+    document.getElementById('scrollProgress').style.width = progress + '%';
+});
