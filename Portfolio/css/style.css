@@ -375,6 +375,31 @@ footer {
     }
 }
 
+.expand-btn {
+    background: none;
+    border: 1px solid #4f7cff;
+    color: #4f7cff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.project-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease;
+    font-size: 13px;
+    color: #aeb4be;
+}
+
+.project-card.open .project-details {
+    max-height: 200px;
+    margin-top: 10px;
+}
+
+
 
 
 
