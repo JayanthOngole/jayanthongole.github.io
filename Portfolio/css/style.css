@@ -205,4 +205,40 @@ footer {
 }
 
 
+/* ===== HERO PREMIUM UPGRADE ===== */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+/* glowing gradient background */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(79,124,255,0.25) 0%, transparent 70%);
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(80px);
+    z-index: 0;
+}
+
+.hero h1, .hero p, .buttons {
+    position: relative;
+    z-index: 1;
+}
+
+/* soft text glow */
+.hero h1 {
+    text-shadow: 0 0 12px rgba(79,124,255,0.4);
+}
+
+/* subtle hover lift for buttons */
+.btn:hover, .btn-outline:hover {
+    transform: translateY(-2px);
+}
+
 
