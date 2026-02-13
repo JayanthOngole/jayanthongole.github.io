@@ -280,5 +280,54 @@ footer {
 }
 
 
+/* ===== ARCHITECTURE UI ===== */
+
+.arch-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.arch-box {
+    background: #151922;
+    border: 1px solid #1e2433;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px auto;
+    max-width: 420px;
+    transition: 0.2s ease;
+}
+
+.arch-box:hover {
+    border-color: #4f7cff;
+    transform: translateY(-3px);
+}
+
+.arch-box.small {
+    max-width: 260px;
+}
+
+.arch-box h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.arch-box p {
+    font-size: 13px;
+    color: #aeb4be;
+}
+
+.arch-arrow {
+    font-size: 22px;
+    color: #4f7cff;
+    margin: 10px 0;
+}
+
+.arch-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 
 
