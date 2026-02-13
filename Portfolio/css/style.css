@@ -1,62 +1,93 @@
-:root {
-  --bg: #ffffff;
-  --text: #111111;
-  --accent: #5b7cfa;
-}
-
-[data-theme="dark"] {
-  --bg: #0f1115;
-  --text: #eaeaea;
-  --accent: #8ab4ff;
-}
-
-* {
-  box-sizing: border-box;
-  font-family: system-ui, sans-serif;
-}
-
 body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  transition: background 0.3s, color 0.3s;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #0f1115;
+    color: #e6e6e6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: #0a0c10;
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: #ccc;
+    text-decoration: none;
 }
 
 .hero {
-  height: 100vh;
-  display: grid;
-  place-content: center;
-  text-align: center;
-  background: radial-gradient(circle at top, var(--accent), transparent);
+    text-align: center;
+    padding: 120px 20px;
 }
 
-.hero-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+.hero h1 {
+    font-size: 42px;
 }
 
-.hero-subtitle {
-  opacity: 0.8;
+.hero p {
+    color: #9aa0a6;
+    margin-top: 10px;
 }
 
-#themeToggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
+.buttons {
+    margin-top: 25px;
 }
 
-.projects {
-  padding: 4rem 2rem;
-  max-width: 1000px;
-  margin: auto;
+.btn {
+    background: #4f7cff;
+    padding: 12px 22px;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-right: 10px;
 }
 
-.project-card {
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  border-radius: 12px;
-  background: color-mix(in srgb, var(--accent) 10%, transparent);
+.btn-outline {
+    border: 1px solid #4f7cff;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #4f7cff;
+}
+
+.section {
+    padding: 80px 60px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+.dark {
+    background: #0a0c10;
+}
+
+.skills-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card, .project-card {
+    background: #151922;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #0a0c10;
+    color: #888;
 }
