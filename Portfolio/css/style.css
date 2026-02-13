@@ -538,5 +538,11 @@ body.light .arch-box {
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+
 
 
