@@ -18,8 +18,14 @@ faders.forEach(fader => {
 
 document.querySelectorAll('.expand-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-        const card = btn.parentElement;
-        card.classList.toggle('open');
+
+        // Find nearest container (project-card OR timeline-item)
+        const container = btn.closest('.project-card, .timeline-item');
+
+        if (container) {
+            container.classList.toggle('open');
+        }
+
     });
 });
 
