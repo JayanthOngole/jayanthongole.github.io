@@ -939,8 +939,17 @@ body.light .prototype-filters button.active {
     flex-direction: column;
 }
 
-.modal-content img,
-.modal-content video {
+/* center content */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* hide by default */
+#modalImg,
+#modalVideo {
+    display: none;
     max-width: 85vw;
     max-height: 70vh;
     border-radius: 8px;
@@ -977,5 +986,6 @@ body.light .prototype-filters button.active {
     font-size: 22px;
     cursor: pointer;
 }
+
 
 
