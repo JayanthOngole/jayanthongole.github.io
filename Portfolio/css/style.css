@@ -988,4 +988,19 @@ body.light .prototype-filters button.active {
 }
 
 
+.github-badge {
+    background: rgba(79,124,255,0.15);
+    color: #7fa3ff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.github-badge:hover {
+    background: rgba(79,124,255,0.25);
+}
+
+
 
