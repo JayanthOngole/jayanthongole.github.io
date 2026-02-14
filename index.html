@@ -449,34 +449,51 @@ embedded integration and real-time technologies.
     <button data-filter="simulation">Simulation</button>
     <button data-filter="game">Game</button>
     <button data-filter="embedded">Embedded</button>
-    <button data-filter="systems">Systems</button>
-
     <div class="filter-indicator"></div>
 </div>
 
 <div class="prototype-grid">
 
-<!-- Prototype Example -->
+<!-- C++ Custom Game Engine -->
 <div class="prototype-card" data-category="game">
 
-    <h3>Vehicle Physics Experiment</h3>
+    <h3>Custom C++ Game Engine (Win32) — Ping Pong</h3>
 
-    <p>Exploration of real-time vehicle physics, suspension behaviour and terrain response.</p>
+    <p>
+    A minimal custom game engine built entirely in C++ using the native Win32 API,
+    without external frameworks. Demonstrates low-level window management,
+    real-time game loop, manual rendering pipeline, and system-level control.
+    </p>
 
-    <div class="prototype-media">
-        <!-- IMAGE -->
-        <img src="Portfolio/assets/prototypes/vehicle.jpg" onclick="openModal(this.src)">
+    <button class="expand-btn">Technical Details</button>
+
+    <div class="project-details">
+        <p>
+        Developed a basic real-time engine from scratch using pure C++ and Win32.
+        The application manages its own window, input, rendering, and memory without
+        any third-party libraries.
+
+        Rendering is performed using a manually allocated pixel buffer updated every
+        frame and displayed to the screen. The engine runs a continuous game loop
+        (Input → Update → Render → Display) enabling smooth real-time execution.
+
+        Demonstrates understanding of low-level Windows programming, memory handling,
+        rendering fundamentals, and real-time system behaviour.
+        </p>
     </div>
 
+    <!-- DOWNLOAD -->
     <div class="prototype-links">
+        <a href="Portfolio/assets/downloads/pingpong_engine.exe" download>Download EXE</a>
         <a href="#" target="_blank">GitHub</a>
-        <a href="#" target="_blank">Demo</a>
     </div>
 
     <div class="tech-stack">
-        <span class="tag-game">Game</span>
-        <span>Unity</span>
-        <span>Physics</span>
+        <span class="tag-game">Game Engine</span>
+        <span>C++</span>
+        <span>Win32 API</span>
+        <span>Rendering</span>
+        <span>Real-Time</span>
     </div>
 
 </div>
