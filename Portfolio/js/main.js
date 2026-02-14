@@ -93,6 +93,69 @@ function closeModal() {
     document.getElementById("mediaModal").style.display = "none";
 }
 
+/* Global Gallery -  All Cards */
+
+let currentGallery = [];
+let currentIndex = 0;
+
+/* attach click to ALL galleries */
+document.querySelectorAll('.prototype-media.gallery').forEach(gallery => {
+
+    const media = gallery.querySelectorAll('img, video');
+
+    media.forEach((item, index) => {
+        item.addEventListener('click', () => {
+
+            currentGallery = Array.from(media);
+            currentIndex = index;
+            openMedia();
+
+        });
+    });
+});
+
+function openMedia() {
+
+    const modal = document.getElementById("mediaModal");
+    const img = document.getElementById("modalImg");
+    const video = document.getElementById("modalVideo");
+    const caption = document.getElementById("modalCaption");
+
+    const media = currentGallery[currentIndex];
+
+    modal.style.display = "flex";
+
+    if (media.tagName === "IMG") {
+        img.style.display = "block";
+        video.style.display = "none";
+        img.src = media.src;
+    } else {
+        img.style.display = "none";
+        video.style.display = "block";
+        video.src = media.src;
+        video.play();
+    }
+
+    caption.textContent = media.dataset.caption || "";
+}
+
+function nextMedia() {
+    currentIndex = (currentIndex + 1) % currentGallery.length;
+    openMedia();
+}
+
+function prevMedia() {
+    currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+    openMedia();
+}
+
+function closeModal() {
+    const modal = document.getElementById("mediaModal");
+    const video = document.getElementById("modalVideo");
+
+    modal.style.display = "none";
+    video.pause();
+}
 
 
 
