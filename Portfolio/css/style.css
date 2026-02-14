@@ -736,4 +736,68 @@ body.light .hero::after {
 }
 
 
+/* ================= PROTOTYPES ================= */
+
+.prototype-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+    margin-top: 20px;
+}
+
+.prototype-card {
+    background: #151922;
+    border: 1px solid #1e2433;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.25s ease;
+}
+
+.prototype-card:hover {
+    transform: translateY(-4px);
+    border-color: #4f7cff;
+}
+
+.prototype-card h3 {
+    margin-bottom: 8px;
+}
+
+.prototype-card p {
+    font-size: 13px;
+    color: #aeb4be;
+}
+
+/* media */
+.prototype-media img,
+.prototype-media video {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+/* links */
+.prototype-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.prototype-links a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #4f7cff;
+}
+
+/* light theme */
+body.light .prototype-card {
+    background: #ffffff;
+    border: 1px solid #e3e6ee;
+}
+
+body.light .prototype-card p {
+    color: #555;
+}
+
+
 
