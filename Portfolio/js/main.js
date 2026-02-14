@@ -125,12 +125,16 @@ function openMedia() {
 
     modal.style.display = "flex";
 
+    // reset
+    img.style.display = "none";
+    video.style.display = "none";
+    video.pause();
+    video.src = "";
+
     if (media.tagName === "IMG") {
         img.style.display = "block";
-        video.style.display = "none";
         img.src = media.src;
     } else {
-        img.style.display = "none";
         video.style.display = "block";
         video.src = media.src;
         video.play();
