@@ -1047,3 +1047,11 @@ body.light .nav-email {
     color: #4f7cff;
 }
 
+
+@media (max-width: 600px) {
+    .nav-email {
+        display: none;
+    }
+}
+
+
