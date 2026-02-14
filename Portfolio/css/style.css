@@ -1017,3 +1017,33 @@ body.light .prototype-filters button.active {
 }
 
 
+/* NAV EMAIL */
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.logo .name {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nav-email {
+    font-size: 12px;
+    color: #7fa3ff;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: 0.2s ease;
+}
+
+.nav-email:hover {
+    color: #4f7cff;
+}
+
+/* light theme */
+body.light .nav-email {
+    color: #4f7cff;
+}
+
