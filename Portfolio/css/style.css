@@ -905,3 +905,77 @@ body.light .prototype-filters button.active {
     margin-top: 10px;
 }
 
+/* gallery grid */
+.prototype-media.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.prototype-media.gallery img,
+.prototype-media.gallery video {
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: 0.2s ease;
+}
+
+.prototype-media.gallery img:hover,
+.prototype-media.gallery video:hover {
+    transform: scale(1.04);
+}
+
+/* modal */
+.media-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-content img,
+.modal-content video {
+    max-width: 85vw;
+    max-height: 70vh;
+    border-radius: 8px;
+}
+
+#modalCaption {
+    margin-top: 10px;
+    color: #ccc;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* controls */
+.modal-controls {
+    margin-top: 12px;
+}
+
+.modal-controls button {
+    background: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* close */
+.modal-close {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
