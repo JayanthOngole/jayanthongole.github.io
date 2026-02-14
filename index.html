@@ -433,51 +433,52 @@ Experienced in designing complete simulation ecosystems including instructor–t
 </section>
 
 
+
+    
 <section id="prototypes" class="section fade">
 <h2>Personal Prototypes & Experimental Work</h2>
 
 <p class="section-intro">
-Independent prototypes, technical experiments and exploratory systems developed to explore simulation,
-game mechanics, embedded integration and real-time interactive technologies.
+Independent experimental systems exploring simulation, gameplay mechanics,
+embedded integration and real-time technologies.
 </p>
 
+<!-- FILTER -->
+<div class="prototype-filters">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="simulation">Simulation</button>
+    <button data-filter="game">Game</button>
+    <button data-filter="embedded">Embedded</button>
+    <button data-filter="systems">Systems</button>
+</div>
+
 <div class="prototype-grid">
-    <!-- Prototype Card -->
-    <div class="prototype-card">
-    
-        <h3>Prototype Name</h3>
-    
-        <p>
-        Short description of what this prototype explores — gameplay mechanic, simulation idea,
-        embedded experiment, system concept, or technical research.
-        </p>
-    
-        <!-- Optional Media -->
-        <div class="prototype-media">
-            <!-- IMAGE -->
-            <!-- <img src="Portfolio/assets/prototypes/example.jpg" alt="Prototype preview"> -->
-    
-            <!-- VIDEO -->
-            <!-- <video controls>
-                <source src="Portfolio/assets/prototypes/example.mp4" type="video/mp4">
-            </video> -->
-        </div>
-    
-        <!-- Links -->
-        <div class="prototype-links">
-            <a href="#" target="_blank">GitHub</a>
-            <a href="#" target="_blank">Demo</a>
-            <a href="#" target="_blank">Documentation</a>
-        </div>
-    
-        <!-- Tags -->
-        <div class="tech-stack">
-            <span>Unity</span>
-            <span>Gameplay</span>
-            <span>Prototype</span>
-        </div>
-    
+
+<!-- Prototype Example -->
+<div class="prototype-card" data-category="game">
+
+    <h3>Vehicle Physics Experiment</h3>
+
+    <p>Exploration of real-time vehicle physics, suspension behaviour and terrain response.</p>
+
+    <div class="prototype-media">
+        <!-- IMAGE -->
+        <img src="Portfolio/assets/prototypes/vehicle.jpg" onclick="openModal(this.src)">
     </div>
+
+    <div class="prototype-links">
+        <a href="#" target="_blank">GitHub</a>
+        <a href="#" target="_blank">Demo</a>
+    </div>
+
+    <div class="tech-stack">
+        <span class="tag-game">Game</span>
+        <span>Unity</span>
+        <span>Physics</span>
+    </div>
+
+</div>
+
 </div>
 </section>
 
