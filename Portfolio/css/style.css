@@ -469,6 +469,7 @@ h2 {
     font-size: 12px;
     color: #888;
     font-style: italic;
+    font-weight: 600;
 }
 
 
@@ -707,5 +708,6 @@ body.light .bg-grid {
         linear-gradient(rgba(79,124,255,0.03) 1px, transparent 1px),
         linear-gradient(90deg, rgba(79,124,255,0.03) 1px, transparent 1px);
 }
+
 
 
