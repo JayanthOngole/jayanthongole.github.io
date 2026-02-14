@@ -521,9 +521,23 @@ embedded integration and real-time technologies.
 
 <script src="Portfolio/js/main.js"></script>
 
-    <div id="mediaModal" class="media-modal" onclick="closeModal()">
+<div id="mediaModal" class="media-modal">
+
+    <span class="modal-close" onclick="closeModal()">✕</span>
+
+    <div class="modal-content">
         <img id="modalImg">
+        <video id="modalVideo" controls></video>
+        <p id="modalCaption"></p>
     </div>
+
+    <div class="modal-controls">
+        <button onclick="prevMedia()">◀</button>
+        <button onclick="nextMedia()">▶</button>
+    </div>
+
+</div>
+
 
     
 </body>
