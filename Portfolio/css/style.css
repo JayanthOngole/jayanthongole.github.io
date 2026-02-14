@@ -1003,4 +1003,17 @@ body.light .prototype-filters button.active {
 }
 
 
+/* TIMELINE EXPAND */
+
+.timeline-item .project-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+.timeline-item.open .project-details {
+    max-height: 400px;
+    margin-top: 8px;
+}
+
 
