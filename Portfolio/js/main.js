@@ -43,24 +43,45 @@ window.addEventListener('scroll', () => {
     if (bar) bar.style.width = progress + '%';
 });
 
+const buttons = document.querySelectorAll('.prototype-filters button');
+const indicator = document.querySelector('.filter-indicator');
 
-/* FILTER */
-document.querySelectorAll('.prototype-filters button').forEach(btn => {
+function moveIndicator(btn) {
+    const rect = btn.getBoundingClientRect();
+    const parentRect = btn.parentElement.getBoundingClientRect();
+
+    indicator.style.width = rect.width + "px";
+    indicator.style.left = (rect.left - parentRect.left) + "px";
+}
+
+buttons.forEach(btn => {
     btn.addEventListener('click', () => {
-        document.querySelectorAll('.prototype-filters button')
-            .forEach(b => b.classList.remove('active'));
+
+        buttons.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
+
+        moveIndicator(btn);
 
         const filter = btn.dataset.filter;
 
         document.querySelectorAll('.prototype-card').forEach(card => {
-            if (filter === "all" || card.dataset.category === filter)
+            if (filter === "all" || card.dataset.category === filter) {
+                card.classList.remove('hide');
                 card.style.display = "block";
-            else
-                card.style.display = "none";
+            } else {
+                card.classList.add('hide');
+                setTimeout(() => card.style.display = "none", 200);
+            }
         });
     });
 });
+
+/* set initial indicator */
+window.addEventListener('load', () => {
+    const active = document.querySelector('.prototype-filters button.active');
+    if (active) moveIndicator(active);
+});
+
 
 /* MODAL */
 function openModal(src) {
