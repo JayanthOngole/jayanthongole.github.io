@@ -572,6 +572,34 @@ html {
     margin-top: 6px;
 }
 
+.timeline-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.role-badge {
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.role-badge.junior {
+    background: rgba(120,120,120,0.15);
+    color: #aaa;
+}
+
+.role-badge.mid {
+    background: rgba(79,124,255,0.15);
+    color: #7fa3ff;
+}
+
+.role-badge.senior {
+    background: rgba(120,200,255,0.18);
+    color: #6fd3ff;
+}
+
+
 
 
 
