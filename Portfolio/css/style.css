@@ -899,3 +899,9 @@ body.light .prototype-filters button.active {
 }
 
 
+/* allow prototype expand */
+.prototype-card.open .project-details {
+    max-height: 500px;
+    margin-top: 10px;
+}
+
