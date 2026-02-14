@@ -16,16 +16,16 @@ faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
 
+/* EXPAND / COLLAPSE (works for projects + prototypes + timeline) */
+
 document.querySelectorAll('.expand-btn').forEach(btn => {
     btn.addEventListener('click', () => {
 
-        // Find nearest container (project-card OR timeline-item)
-        const container = btn.closest('.project-card, .timeline-item');
+        const container = btn.closest('.project-card, .prototype-card, .timeline-item');
 
         if (container) {
             container.classList.toggle('open');
         }
-
     });
 });
 
