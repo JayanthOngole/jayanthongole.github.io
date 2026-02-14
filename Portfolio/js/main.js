@@ -46,45 +46,6 @@ window.addEventListener('scroll', () => {
 
 
 
-const roles = [
-    "Simulation Systems Engineer",
-    "Real-Time Simulation Specialist",
-    "Distributed Simulation Architect",
-    "Defence & Training Simulation Engineer"
-];
-
-let i = 0;
-let j = 0;
-let current = "";
-let isDeleting = false;
-
-function type() {
-    const element = document.getElementById("typing");
-    if (!element) return;
-
-    current = roles[i];
-
-    if (isDeleting) {
-        element.textContent = current.substring(0, j--);
-    } else {
-        element.textContent = current.substring(0, j++);
-    }
-
-    if (!isDeleting && j === current.length) {
-        isDeleting = true;
-        setTimeout(type, 1200);
-        return;
-    }
-
-    if (isDeleting && j === 0) {
-        isDeleting = false;
-        i = (i + 1) % roles.length;
-    }
-
-    setTimeout(type, isDeleting ? 40 : 70);
-}
-
-type();
 
 
 
