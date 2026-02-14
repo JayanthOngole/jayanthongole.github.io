@@ -600,3 +600,112 @@ html {
 }
 
 
+/* ================= LIGHT THEME FULL FIX ================= */
+
+body.light {
+    background: #f5f6fa;
+    color: #111;
+}
+
+/* Navbar */
+body.light .navbar {
+    background: rgba(255,255,255,0.9);
+    border-bottom: 1px solid #e3e6ee;
+}
+
+body.light .navbar a {
+    color: #333;
+}
+
+body.light .navbar a:hover {
+    color: #4f7cff;
+}
+
+/* Hero text */
+body.light .hero-sub,
+body.light .hero-note {
+    color: #555;
+}
+
+/* Section backgrounds */
+body.light .dark {
+    background: #eef1f7;
+}
+
+/* Cards / blocks */
+body.light .card,
+body.light .project-card,
+body.light .arch-box,
+body.light .focus-card {
+    background: #ffffff;
+    border: 1px solid #e3e6ee;
+    color: #222;
+}
+
+/* Text inside cards */
+body.light .project-card p,
+body.light .arch-box p,
+body.light .timeline-item p,
+body.light .focus-card p,
+body.light .projects,
+body.light .hero p {
+    color: #555;
+}
+
+/* Headings */
+body.light h1,
+body.light h2,
+body.light h3 {
+    color: #111;
+}
+
+/* Timeline */
+body.light .timeline {
+    border-left: 2px solid #4f7cff;
+}
+
+/* Buttons */
+body.light .contact-btn {
+    background: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+body.light .contact-btn:hover {
+    border-color: #4f7cff;
+    color: #4f7cff;
+}
+
+/* Footer */
+body.light footer {
+    background: #eef1f7;
+    color: #555;
+    border-top: 1px solid #ddd;
+}
+
+/* Status badge */
+body.light .status-badge {
+    background: rgba(79,124,255,0.12);
+    color: #4f7cff;
+}
+
+/* Tags */
+body.light .tag {
+    background: rgba(79,124,255,0.1);
+    color: #4f7cff;
+}
+
+/* Expand button */
+body.light .expand-btn {
+    color: #4f7cff;
+    border-color: #4f7cff;
+}
+
+/* Grid background softer */
+body.light .bg-grid {
+    background-image:
+        linear-gradient(rgba(79,124,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(79,124,255,0.03) 1px, transparent 1px);
+}
+
+
