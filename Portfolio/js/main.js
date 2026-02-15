@@ -163,6 +163,28 @@ function closeModal() {
 
 
 
+// ===== CERTIFICATE MODAL VIEWER =====
+
+const modal = document.getElementById("certModal");
+const modalImg = document.getElementById("certModalImg");
+const closeBtn = document.querySelector(".cert-close");
+
+document.querySelectorAll(".cert-preview").forEach(img => {
+    img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    }
+});
+
+closeBtn.onclick = function () {
+    modal.style.display = "none";
+};
+
+modal.onclick = function (e) {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+};
 
 
 
