@@ -1055,3 +1055,57 @@ body.light .nav-email {
 }
 
 
+/* ===== CERTIFICATIONS LIST ===== */
+
+.cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.cert-item {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    background: #151922;
+    border: 1px solid #1e2433;
+    padding: 16px;
+    border-radius: 8px;
+    transition: 0.25s ease;
+}
+
+.cert-item:hover {
+    border-color: #4f7cff;
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(79,124,255,0.15);
+}
+
+.cert-item img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #1e2433;
+}
+
+.cert-content h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.cert-content p {
+    font-size: 13px;
+    color: #aeb4be;
+    margin-bottom: 6px;
+}
+
+.cert-link {
+    font-size: 12px;
+    color: #4f7cff;
+    text-decoration: none;
+}
+
+.cert-link:hover {
+    text-decoration: underline;
+}
+
