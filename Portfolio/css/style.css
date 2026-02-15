@@ -1109,3 +1109,16 @@ body.light .nav-email {
     text-decoration: underline;
 }
 
+
+body.light .cert-item {
+    background: #ffffff;
+    border-color: #ddd;
+}
+
+body.light .cert-content p {
+    color: #555;
+}
+
+body.light .cert-item img {
+    border-color: #ddd;
+}
